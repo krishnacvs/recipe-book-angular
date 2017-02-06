@@ -5,6 +5,7 @@
 ### Stuff used to make this:
 
  * [Angular 2](https://angular.io)
+ * [TypeScript](https://www.typescriptlang.org)
  * [Angular-Cli](https://github.com/angular/angular-cli)
  * [Bootstrap 4](http://getbootstrap.com/getting-started)
  
