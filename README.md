@@ -1,4 +1,4 @@
-# Kitch and Shoping list app in Angular 2
+# Recipe book and Shoping list app in Angular 2
 
 ## This app stores recipes and the necessary shopping list.
 
