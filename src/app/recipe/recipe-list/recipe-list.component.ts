@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
-import { Recipe} from '../recipe.model'
+import { Recipe } from '../recipe.model'
+import { Ingredient } from '../../model/ingredient.model'
 
 @Component({
   selector: 'app-recipe-list',
@@ -11,7 +12,13 @@ export class RecipeListComponent implements OnInit {
 
   @Output() recipeSelected = new EventEmitter<Recipe>();
 
-  recipe = new Recipe('Dumy','Dumy','https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQzDAlXF03sWnI7OuUtEBBXg-BOa8nQGijLOV7jU7SNUce-ySlHv0Z5Q');
+  recipes: Recipe[] = [
+    new Recipe('Stack', 'Very nice', 'http://www.proveeduriapiaf.com.ar/epiaf/images/stories/virtuemart/product/roas-beff.jpg', [
+      new Ingredient('Pommes', 10),
+      new Ingredient('Beff', 1)
+    ]),
+    new Recipe('Milk', 'Fresh', 'http://www.ziuaconstanta.ro/images/stories/2016/03/03/rodica/lapte.jpg', [])
+  ];
 
   constructor() { }
 
