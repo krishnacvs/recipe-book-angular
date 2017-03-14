@@ -1,11 +1,11 @@
 <header>
   <ul class="nav nav-pills">
-    <li role="presentation"><a href="#">Recipe book</a></li>
-    <li role="presentation"><a href="#">Shopping List</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/recipes']">Recipe book</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/shoppinglist']">Shopping List</a></li>
     <li>
       <div class="dropdown" appDropdown>
         <button class="btn btn-primary" type="button" aria-haspopup="true" aria-expanded="true">
-          Dropdown
+          Administration
           <span class="caret"></span>
           </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
