@@ -1,6 +1,5 @@
 import { Recipe } from './recipe.model';
 import { Ingredient } from '../model/ingredient.model';
-import { EventEmitter } from '@angular/core';
 
 export class RecipeService {
 
@@ -14,10 +13,13 @@ export class RecipeService {
     new Recipe('Milk', 'Fresh', 'http://www.ziuaconstanta.ro/images/stories/2016/03/03/rodica/lapte.jpg', [])
   ];
 
-  recipeSelected = new EventEmitter<Recipe>();
 
   getRecipes(){
     return this.recipes;
+  }
+
+  getRecipe(id: number){
+    return this.recipes[id];
   }
 
 }
