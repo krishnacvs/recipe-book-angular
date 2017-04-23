@@ -7,7 +7,7 @@
           <input type="text" 
                  id="itemName" 
                  class="form-control"
-                 ngModel
+                 [ngModel]="selectedIngredient.name"
                  required
                  name="name">
         </div>
@@ -16,7 +16,7 @@
           <input type="text" 
                  id="itemAmount" 
                  class="form-control"
-                 ngModel
+                 [ngModel]="selectedIngredient.amount"
                  required
                  name="amount">
         </div>
@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-xs-12">
           <button type="submit" class="btn btn-success">Add</button>
-          <button type="button" class="btn btn-danger">Remove</button>
+          <button *ngIf="!isAdd" (click)="onDelete(f)" type="button" class="btn btn-danger">Remove</button>
           <button (click)="onClear(f)" type="button" class="btn btn-primary">Reset</button>
         </div>
       </div>
