@@ -1,4 +1,5 @@
-import { Ingredient } from '../model/ingredient.model';
+import { Ingredient } from './../model/ingredient.model';
+
 
 export class ShoppingListService {
 
@@ -10,6 +11,14 @@ export class ShoppingListService {
 
   addIngredients(ingredients: Ingredient[]) {
     Array.prototype.push.apply(this.ingredients, ingredients); 
+  }
+
+  addIngredient(ingredient: Ingredient){
+    this.ingredients.push(ingredient);
+  }
+
+  deleteIngredient(ingredient: Ingredient){
+    this.ingredients.splice(this.ingredients.indexOf(ingredient), 1);
   }
 
 }
