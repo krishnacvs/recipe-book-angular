@@ -2,10 +2,23 @@
 
 ## This app stores recipes and the necessary shopping list.
 
-### Stuff used to make this:
+### Run the Application
 
- * [Angular 2](https://angular.io)
- * [TypeScript](https://www.typescriptlang.org)
- * [Angular-Cli](https://github.com/angular/angular-cli)
- * [Bootstrap](http://getbootstrap.com/getting-started)
- 
+Install all node_modules
+
+```
+npm install
+```
+
+Run on localhost:4200
+
+```
+ng serve
+```
+
+## Built With
+
+* [Angular 2+](https://angular.io/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Angular-cli](https://cli.angular.io/)
+* [Bootstrap](http://getbootstrap.com/)
