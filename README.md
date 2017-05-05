@@ -2,6 +2,10 @@
 
 ## This app stores recipes and the necessary shopping list.
 
+## Demo
+
+[Recipe Book App on Heroku](https://limitless-hamlet-96748.herokuapp.com/)
+
 ### Run the Application
 
 Install all node_modules
