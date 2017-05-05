@@ -4,7 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "node main.716ccf5d9c17f8ae34d5.bundle.js"
+    "start": "node dist/main.716ccf5d9c17f8ae34d5.bundle.js"
   },
   "engines": {
     "node": "6.10.2",
