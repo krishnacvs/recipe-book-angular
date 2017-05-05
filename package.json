@@ -11,7 +11,7 @@
     "e2e": "protractor",
     "postinstall": "ng build --aot -prod",
     "start": "node server.js",
-    "deploy": "git add . && git commit -m 'Automatic Deploy' && xgit push origin master && git push heroku master"
+    "deploy": "git add . && git commit -m 'Automatic Deploy' && git push origin master && git push heroku master"
   },
   "engines": {
     "node": "6.9.2",
