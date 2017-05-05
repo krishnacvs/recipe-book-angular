@@ -4,13 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "http-server",
-    "lint": "tslint \"src/**/*.ts\"",
-    "test": "ng test",
-    "pree2e": "webdriver-manager update",
-    "e2e": "protractor",
-    "preinstall": "npm install -g http-server",
-    "postinstall": "ng build && mv dist/* ."
+    "start": "node main.716ccf5d9c17f8ae34d5.bundle.js"
   },
   "engines": {
     "node": "6.10.2",
