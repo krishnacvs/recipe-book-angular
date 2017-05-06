@@ -9,6 +9,9 @@ import 'rxjs/Rx';
 export class RecipeService {
 
   recipeChanged = new EventEmitter<Recipe[]>();
+  
+  // Give the link for your firebase backend
+  const link = 'LINK';
 
 
   constructor(private _http: Http) { }
@@ -47,11 +50,11 @@ export class RecipeService {
     const header = new Headers({
       'Content-Type': 'application/json'
     });
-    return this._http.put('https://ng2-recipe-http.firebaseio.com/recipe.json', body, {headers: header});
+    return this._http.put(this.link, body, {headers: header});
   }
 
   fetchData(){
-    this._http.get('https://ng2-recipe-http.firebaseio.com/recipe.json')
+    this._http.get(this.link)
     .map((response: Response) => response.json())
     .subscribe(
       (recipes: Recipe[]) => {
