@@ -1,6 +1,6 @@
 # Recipe book and Shoping list app in Angular 2
 
-## This app stores recipes and the necessary shopping list.
+This app stores recipes and the necessary shopping list.
 
 ### Run the Application
 
